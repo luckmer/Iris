@@ -1,7 +1,4 @@
-import { useState } from "react";
+import Paginator from "./pages/Paginator";
 
-function App() {
-  return <div className="App"></div>;
-}
-
+const App = () => <Paginator />;
 export default App;
