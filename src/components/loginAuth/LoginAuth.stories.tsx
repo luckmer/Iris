@@ -7,5 +7,5 @@ import LoginAuth from "./LoginAuth";
 storiesOf("views/LoginAuth", module)
   .addDecorator(withKnobs)
   .add("default", () => {
-    return <LoginAuth />;
+    return <LoginAuth onSubmit={action("submit")} />;
   });
