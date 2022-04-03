@@ -20,28 +20,27 @@ const LoginAuth: React.FC<Iprops> = ({ onSubmit }) => {
         >
           <Grid item>
             <Typography component="p" style={{ paddingBottom: 20 }}>
-              Join now!
+              Register!
             </Typography>
           </Grid>
           <Grid item xs>
             <Grid container direction="column">
               <form className={classes.form} onSubmit={onSubmit}>
-                <input className={classes.input} placeholder="name or email" />
+                <input className={classes.input} placeholder="name" />
+                <input className={classes.input} placeholder="userName" />
                 <input className={classes.input} placeholder="password" />
-                <button className={classes.submit}>Login</button>
+                <input
+                  className={classes.input}
+                  placeholder="confirm Password"
+                />
+                <input className={classes.input} placeholder="email" />
+                <button className={classes.submit}>Register</button>
               </form>
             </Grid>
           </Grid>
           <Grid item xs>
-            <Grid container style={{ paddingTop: 12 }} direction="column">
-              <button className={classes.PasswordRestart}>
-                forgot your password ?
-              </button>
-            </Grid>
-          </Grid>
-          <Grid item xs>
             <Grid container style={{ paddingTop: 36 }} direction="column">
-              <Typography component="p">You don't have an account?</Typography>
+              <Typography component="p"> already have an account ?</Typography>
             </Grid>
           </Grid>
         </Grid>
