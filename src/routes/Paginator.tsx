@@ -3,15 +3,16 @@ import { Provider } from "react-redux";
 import { Route, useLocation } from "react-router-dom";
 import store from "../redux/store";
 import routes from "./index/index";
-
+import LoginTheme from "../components/loginAuth/LoginAuth";
 const Paginator = () => {
   const location = useLocation();
 
   return (
     <Provider store={store}>
-      {routes.map(({ path }) => (
+      <LoginTheme />
+      {/* {routes.map(({ path }) => (
         <Route path={path} />
-      ))}
+      ))} */}
     </Provider>
   );
 };
